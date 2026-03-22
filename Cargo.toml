@@ -20,8 +20,8 @@ json = ["dep:jaq-core"]
 serde = { version = "1.0", features = ["derive", "rc", "serde_derive"] }
 serde_json = "1.0"
 regex = "1"
-mlua = { version = "0.10", features = [
-  "lua54",
+mlua = { version = "0.11", features = [
+  "lua55",
   "vendored",
   "macros",
   "serialize",
@@ -41,8 +41,8 @@ sqlx = { version = "0.8", features = [
 ], optional = true }
 encoding_rs = { version = "0.8", features = ["fast-kanji-encode", "serde"] }
 tokio = { version = "1.44", features = ["bytes", "rt", "rt-multi-thread"] }
-rand = { version = "0.9", features = ["serde"] }
-jaq-core = { version="2.1", optional=true }
+rand = { version = "0.10", features = ["serde"] }
+jaq-core = { version = "2.2", optional = true }
 
 
 [dependencies.uuid]
